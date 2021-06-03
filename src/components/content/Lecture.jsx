@@ -10,7 +10,7 @@ export default function Lecture(props){
     return(
         <div className="box-element lecture">
             <div><h3>{item.subject} {" with "} {item.teacher}</h3></div>
-            <div style={{color:"blue"}}><p1>{"Lecture in  "} {item.hourLeft} {": "} {item.minuteLeft} {" : "}{props.sec}</p1></div>
+            <div style={{color:"blue",fontSize:"1.5rem"}}><p1>{"Lecture in  "} {item.hourLeft}hr {": "} {item.minuteLeft}min  {" : "}{props.sec}s</p1></div>
             <Btn link={item.link}/>
         </div>
     )

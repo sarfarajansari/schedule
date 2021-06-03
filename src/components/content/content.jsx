@@ -16,7 +16,6 @@ export default function Content() {
         Getrequest("",setdata,setloaded)
         setInterval(() => {
             Getrequest("",setdata,setloaded)
-            console.log(data)
         },60000);
         
         const interval = setInterval(() => {
@@ -25,15 +24,12 @@ export default function Content() {
                 n=60
             }
             down()
-            console.log(n)
         }, 1000);
-        console.log(sec)
         return () => {
             console.log(`clearing interval`);
             clearInterval(interval);
           };
     }, [])
-    console.log(data)
     return (
         <div className="content-container">
             {data.map((item)=>{
