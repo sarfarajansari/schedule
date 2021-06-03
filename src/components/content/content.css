@@ -1,0 +1,53 @@
+.content-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding:1rem 0.5rem;
+
+}
+.lecture{
+    background-color: rgb(117, 247, 186);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    
+}
+.join-btn{
+    padding: 0.5rem 1.5rem;
+    outline: blue;
+    background-color: rgb(172, 136, 240);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.join-btn:hover{
+    background-color: rgb(37, 21, 37);
+}
+
+@media screen and (min-width:720px){
+    .content-container{
+        padding:1rem 5rem;
+    }
+    .join-btn{
+        padding: 1rem 3rem;
+    }
+    .lecture{
+        padding: 1rem 3rem;
+    }
+}
+
+@media screen and (min-width:960px){
+    .content-container{
+        padding:1rem 9rem;
+    }
+    .join-btn{
+        border-radius: 1rem;
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (min-width:1080px){
+    .content-container{
+        padding:1rem 12rem;
+    }
+}
