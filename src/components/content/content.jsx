@@ -2,6 +2,7 @@ import Getrequest from "../request/get_request"
 import React, { useEffect, useState } from 'react'
 import Lecture from "./Lecture"
 import "./content.css"
+import Newclock from"../clock/clock"
 var n = 60
 
 
@@ -31,6 +32,7 @@ export default function Content() {
           };
     }, [])
     return (
+        <>
         <div className="content-container">
             {data.map((item)=>{
                 return(
@@ -38,5 +40,6 @@ export default function Content() {
                 )
             })}
         </div>
+        </>
     )
 }

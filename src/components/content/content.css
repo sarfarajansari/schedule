@@ -13,6 +13,7 @@
     margin-bottom: 2rem;
     
 }
+
 .join-btn{
     padding: 0.5rem 1.5rem;
     outline: blue;
@@ -34,6 +35,9 @@
     }
     .lecture{
         padding: 1rem 3rem;
+    }
+    .lectime{
+        font-size:1.2rem
     }
 }
 

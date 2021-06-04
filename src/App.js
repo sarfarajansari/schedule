@@ -3,6 +3,8 @@ import Nav from "./components/nav/Nav";
 import Content from "./components/content/content"
 import { useEffect, useState } from "react";
 import GetRequest from "./components/request/get_request";
+import Footer from "./components/footer/footer";
+import Newclock from "./components/clock/clock";
 
 // import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
@@ -22,8 +24,8 @@ function App() {
   return (
     <div id="grid">
       <div id="navbar"><Nav/></div>
-      <div id="content"><Content/></div>
-      <div id="footer"></div>
+      <div id="content"><Newclock/> <Content/></div>
+      <div id="footer"><Footer/> </div>
     </div>
   );
 }
